@@ -7,7 +7,7 @@ import (
 )
 
 func RunMigration() {
-	err := mysql.DB.AutoMigrate(&models.User{})
+	err := mysql.DB.AutoMigrate(&models.Transaction{}, &models.User{}, &models.Profile{}, &models.Product{}, &models.Category{})
 
 	if err != nil {
 		fmt.Println(err)

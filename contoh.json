@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "name": "Soeharto",
+  "email": "soeharto@pemerintah.id",
+  "password": "enakjamankuto",
+  "product": [
+    {
+      "id": 1,
+      "item": "M16"
+    },
+    {
+      "id": 2,
+      "item": "AK74"
+    }
+  ]
+}

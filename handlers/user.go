@@ -107,7 +107,7 @@ func (h *handler) DeleteUser(c echo.Context) error {
 		return c.JSON(http.StatusBadRequest, dto.ErrorResult{Code: http.StatusBadRequest, Message: err.Error()})
 	}
 
-	data, err := h.UserRepository.DeleteUser(user, id)
+	data, err := h.UserRepository.DeleteUser(user)
 	if err != nil {
 		return c.JSON(http.StatusInternalServerError, dto.ErrorResult{Code: http.StatusInternalServerError, Message: err.Error()})
 	}
