@@ -54,12 +54,13 @@ func (h *handlerProduct) CreateProduct(c echo.Context) error {
 	}
 
 	product := models.Product{
-		Name:   request.Name,
-		Desc:   request.Desc,
-		Price:  request.Price,
-		Image:  request.Image,
-		Qty:    request.Qty,
-		UserID: request.UserID,
+		Name:       request.Name,
+		Desc:       request.Desc,
+		Price:      request.Price,
+		Image:      request.Image,
+		Qty:        request.Qty,
+		UserID:     request.UserID,
+		CategoryID: request.CategoryID,
 	}
 
 	product, err = h.ProductRepository.CreateProduct(product)
